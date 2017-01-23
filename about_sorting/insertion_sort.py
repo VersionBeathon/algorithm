@@ -23,7 +23,7 @@ def insert_sort(array, **kwargs):
     if kwargs['reverse']:
 
         length = len(array)
-        
+
         for i in range(1, length):
             j = i - 1
             if array[i] > array[j]:
@@ -36,6 +36,6 @@ def insert_sort(array, **kwargs):
                 array[j + 1] = temp
     return array
 
-
-_list = [49, 38, 65, 97, 76, 13, 27, 49]
-print(insert_sort(_list, reverse=True))
+if __name__ == "__main__":
+    _list = [49, 38, 65, 97, 76, 13, 27, 49]
+    print(insert_sort(_list, reverse=True))
